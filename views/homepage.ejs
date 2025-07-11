@@ -1,0 +1,17 @@
+<h1 class="display-4">Stories</h1>
+<div>
+    <% stories.forEach(story=> { %>
+        <div class="story">
+            <div class="upper-row">
+                <div class="story-name"><%= story.title %></div>
+                <div class="story-date"><%= story.publish_date %></div>
+            </div>
+            <img src="<%= story.preview %>" alt="">
+            <div class="author-row">
+                <span><%= story.author.username %></span>
+                <img src="<%= story.author.avatar %>">
+            </div>
+            <h3></h3>
+        </div>
+    <% }); %>
+</div>
